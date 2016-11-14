@@ -1,0 +1,10 @@
+name: nsidc0530
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - netcdf4
+  - numpy
+  - python=3
