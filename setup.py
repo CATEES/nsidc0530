@@ -8,10 +8,12 @@ with open('meta.yaml', 'r') as f:
 version = doc['package']['version']
 name = doc['package']['name']
     
-setup(name=name,
-      version=version,
-      py_modules=[name],
-      author='Paul Madden',
-      author_email='pmadden@nsidc.org',
-      url='https://github.com/catees/%s' % name,
+setup(
+    name=name,
+    version=version,
+    packages=[name],
+    package_data={name: ['latlon.gz']},
+    author='Paul Madden',
+    author_email='pmadden@nsidc.org',
+    url='https://github.com/catees/%s' % name,
 )
