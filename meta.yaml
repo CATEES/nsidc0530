@@ -18,3 +18,6 @@ requirements:
 build:
   script:
     - python setup.py install
+
+about:
+  home: https://github.com/CATEES/nsidc0530
